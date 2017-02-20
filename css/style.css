@@ -1,0 +1,56 @@
+/*     Стили слайдера     */
+
+.car-list {
+    list-style: none;
+    width: 10000px;
+    padding: 0px;
+    position: relative;
+}
+
+.car-elem {
+    display: block;
+    margin-left: 25px;
+    float: left;
+}
+
+.car-elem img {
+    max-width: 100px;
+}
+
+.car-hider {
+    width: 640px;
+    overflow: hidden;
+    float: left;
+}
+
+.car-arrow-left, .car-arrow-right {
+    float: left;
+    display: block;
+    border: 1px solid grey;
+    background-color: lightgrey;
+    padding: 5px;
+    margin-top: 50px;
+}
+
+.car-arrow-left:hover, .car-arrow-right:hover {
+    cursor: pointer;
+    background-color: grey;
+}
+
+.car-arrow-left {
+    margin-right: 25px;
+}
+
+.car-arrow-right {
+    margin-left: 25px;
+}
+
+/*     Шаблонизатор     */
+
+.template {
+  display: block;
+  float: right;
+  border: 1px solid black;
+  margin-right: 50px;
+  padding: 10px;
+}

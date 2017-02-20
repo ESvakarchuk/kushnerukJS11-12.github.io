@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.mySlider.js"></script>
+    <script type="text/javascript" src="js/template.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <title>jQuery pluggin and template</title>
+</head>
+
+<body>
+    <div class="car-arrow-left"><span>Влево</span></div>
+    <div class="car-hider">
+        <ul class="car-list">
+            <li class="car-elem"><img src="img/1.jpg" alt="nature">
+                <p>description 1</p>
+                </img>
+            </li>
+            <li class="car-elem"><img src="img/2.jpg" alt="nature">
+                <p>description 2</p>
+                </img>
+            </li>
+            <li class="car-elem"><img src="img/3.jpg" alt="nature">
+                <p>description 3</p>
+                </img>
+            </li>
+            <li class="car-elem"><img src="img/1.jpg" alt="nature">
+                <p>description 4</p>
+                </img>
+            </li>
+            <li class="car-elem"><img src="img/2.jpg" alt="nature">
+                <p>description 5</p>
+                </img>
+            </li>
+            <li class="car-elem"><img src="img/3.jpg" alt="nature">
+                <p>description 6</p>
+                </img>
+            </li>
+            <li class="car-elem"><img src="img/1.jpg" alt="nature">
+                <p>description 7</p>
+                </img>
+            </li>
+            <li class="car-elem"><img src="img/2.jpg" alt="nature">
+                <p>description 8</p>
+                </img>
+            </li>
+            <li class="car-elem"><img src="img/3.jpg" alt="nature">
+                <p>description 9</p>
+                </img>
+            </li>
+            <li class="car-elem"><img src="img/1.jpg" alt="nature">
+                <p>description 10</p>
+                </img>
+            </li>
+            <li class="car-elem"><img src="img/2.jpg" alt="nature">
+                <p>description 11</p>
+                </img>
+            </li>
+            <li class="car-elem"><img src="img/3.jpg" alt="nature">
+                <p>description 12</p>
+                </img>
+            </li>
+        </ul>
+    </div>
+    <div class="car-arrow-right"><span>Вправо</span></div>
+
+    <div class="template">
+
+        <ul id="results">
+            output results here.
+        </ul>
+        <script type="text/html" id="item_tmpl">
+            <% for ( var i = 0; i < images.length; i++ ) { %>
+                <li id="<%=images[i].id%>" class="<%=(i % 2 == 1 ? " even " : " odd ")%>">
+                    <%=i+1%>. img - <%=images[i].text%> (src: <%=images[i].src%>)
+                </li>
+                <% } %>
+        </script>
+
+    </div>
+</body>
+
+</html>
